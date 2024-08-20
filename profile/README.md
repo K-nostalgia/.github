@@ -177,4 +177,302 @@
 
 <br>
 
+## 📁 파일 구조
+```
+📦src
+ ┣ 📂app
+ ┃ ┣ 📂(provider)
+ ┃ ┃ ┗ 📂(root)
+ ┃ ┃ ┃ ┣ 📂(home)
+ ┃ ┃ ┃ ┃ ┣ 📂_components
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜FoodBox.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜LikeButton.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜LoadingSkeleton.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜SectionBanner.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜SectionFood.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜SectionMarket.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜SectionVideo.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜SlideBanner.tsx
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜WideFoodBox.tsx
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┣ 📂admin
+ ┃ ┃ ┃ ┃ ┗ 📂[secret]
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂_components
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜AdminChatReport.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜AdminPayHistory.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜AdminReportChatHistory.tsx
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┣ 📂cart
+ ┃ ┃ ┃ ┃ ┣ 📂_components
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂data-table
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜CountButton.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜Data-table-column-header.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜DataTable.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜DeleteButton.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜CartFixedButtons.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜CartList.tsx
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜CartPriceList.tsx
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┣ 📂check-payment
+ ┃ ┃ ┃ ┃ ┣ 📂_components
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜CheckPaymentContent.tsx
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┣ 📂complete-payment
+ ┃ ┃ ┃ ┃ ┣ 📂_components
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜CompletePaymentContent.tsx
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┣ 📂local-food
+ ┃ ┃ ┃ ┃ ┣ 📂[id]
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂_components
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂web
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ProductDetail.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜ProductSlide.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜CartModal.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜CountButton.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜DeliveryInfo.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜DetailImage.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜DetailSlide.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜DiscountAmount.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜LocalDetailView.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜OrderDetail.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜Review.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜StarRating.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜TotalPriceList.tsx
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┃ ┣ 📂_components
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜AddCartButton.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜FixedButtons.tsx
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜LocalFoodView.tsx
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┣ 📂log-in
+ ┃ ┃ ┃ ┃ ┣ 📂_components
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜DesktopLayout.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜GoogleLogin.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜KaKaoLogin.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜LoginForm.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜LoginHeader.tsx
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜NoLogin.tsx
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┣ 📂market
+ ┃ ┃ ┃ ┃ ┣ 📂[id]
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂_components
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜MarketComments.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜MarketRecommend.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜ScrollButton.tsx
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┃ ┣ 📂_components
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜KaKaoMap.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜MarketImage.tsx
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜MarketLikes.tsx
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┣ 📂my-page
+ ┃ ┃ ┃ ┃ ┣ 📂_components
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜CancelUser.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜Coupon_mypage.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜LikeMarket.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜Logout.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜OrderList_mypage.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜Profile.tsx
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜RecentMarket.tsx
+ ┃ ┃ ┃ ┃ ┣ 📂coupon-page
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┃ ┣ 📂likemarket-page
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜layout.tsx
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┣ 📂payment
+ ┃ ┃ ┃ ┃ ┣ 📂_components
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜NoPayHistory.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜PayHistoryList.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜ReviewForm.tsx
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜ReviewProductDetail.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜layout.tsx
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┣ 📂profile-edit
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┗ 📂sign-up
+ ┃ ┃ ┃ ┃ ┣ 📂_components
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜DesktopSignUpLayout.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜SignUpContainer.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜SignUpForm.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜Step.tsx
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜Stepper.tsx
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┣ 📂api
+ ┃ ┃ ┣ 📂auth
+ ┃ ┃ ┃ ┣ 📂callback
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂check-duplicate
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂log-in
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂log-out
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂sign-up
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂social-login
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂user
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂user-delete
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂user-image
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┗ 📂user-update
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┣ 📂chat
+ ┃ ┃ ┃ ┣ 📂admin
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂chat-list
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂chat-read
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┗ 📂chat-send
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┣ 📂localfood
+ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┣ 📂market
+ ┃ ┃ ┃ ┣ 📂comment
+ ┃ ┃ ┃ ┃ ┗ 📂[marketId]
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂filter-list
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂liked-markets
+ ┃ ┃ ┃ ┃ ┗ 📂[userId]
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂likes
+ ┃ ┃ ┃ ┃ ┗ 📂[userId]
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂list
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂map
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂marketDetail
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂marketDetailList
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂marketImage
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂marketMain
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂recent-markets
+ ┃ ┃ ┃ ┃ ┗ 📂[userId]
+ ┃ ┃ ┃ ┗ 📂recommend
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┣ 📂payment
+ ┃ ┃ ┃ ┣ 📂admin
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂pay-supabase
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂transaction
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┗ 📂webhook
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┣ 📂review
+ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┗ 📂search
+ ┃ ┃ ┃ ┣ 📂home
+ ┃ ┃ ┃ ┃ ┗ 📜route.tsx
+ ┃ ┃ ┃ ┗ 📜route.tsx
+ ┃ ┣ 📜Providers.tsx
+ ┃ ┣ 📜globals.css
+ ┃ ┣ 📜layout.tsx
+ ┃ ┗ 📜template.tsx
+ ┣ 📂components
+ ┃ ┣ 📂chat
+ ┃ ┃ ┣ 📂_component
+ ┃ ┃ ┃ ┣ 📜ChatList.tsx
+ ┃ ┃ ┃ ┣ 📜ReportAlert.tsx
+ ┃ ┃ ┃ ┣ 📜SendChat.tsx
+ ┃ ┃ ┃ ┗ 📜WarningChat.tsx
+ ┃ ┃ ┗ 📜Chat.tsx
+ ┃ ┣ 📂common
+ ┃ ┃ ┣ 📂header
+ ┃ ┃ ┃ ┣ 📂_component
+ ┃ ┃ ┃ ┃ ┣ 📜HomeSearchResult.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜LocalFoodSearchResults.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜MarketSearchResult.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜SearchBar.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜SearchRecommendations.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜ShowBackLogo.tsx
+ ┃ ┃ ┃ ┃ ┗ 📜ShowSearchCart.tsx
+ ┃ ┃ ┃ ┣ 📜AppHeader.tsx
+ ┃ ┃ ┃ ┗ 📜WebHeader.tsx
+ ┃ ┃ ┣ 📜Alert.tsx
+ ┃ ┃ ┣ 📜DefaultAppLayout.tsx
+ ┃ ┃ ┣ 📜DefaultImage.tsx
+ ┃ ┃ ┣ 📜DefaultWebLayout.tsx
+ ┃ ┃ ┣ 📜FirstLoading.tsx
+ ┃ ┃ ┣ 📜Footer.tsx
+ ┃ ┃ ┣ 📜Loading.tsx
+ ┃ ┃ ┣ 📜Navigation.tsx
+ ┃ ┃ ┣ 📜PayButton.tsx
+ ┃ ┃ ┗ 📜SearchAlert.tsx
+ ┃ ┣ 📂icons
+ ┃ ┃ ┣ 📜ChatIcon.tsx
+ ┃ ┃ ┣ 📜ChatSendIcon.tsx
+ ┃ ┃ ┣ 📜KNostalgiaIcon2.tsx
+ ┃ ┃ ┣ 📜KNostalgiaIcon3.tsx
+ ┃ ┃ ┣ 📜TitleLogo.tsx
+ ┃ ┃ ┗ 📜TopButton.tsx
+ ┃ ┗ 📂ui
+ ┃ ┃ ┣ 📜FilterButton.tsx
+ ┃ ┃ ┣ 📜alert-dialog.tsx
+ ┃ ┃ ┣ 📜alert.tsx
+ ┃ ┃ ┣ 📜button.tsx
+ ┃ ┃ ┣ 📜card.tsx
+ ┃ ┃ ┣ 📜carousel.tsx
+ ┃ ┃ ┣ 📜checkbox.tsx
+ ┃ ┃ ┣ 📜dialog.tsx
+ ┃ ┃ ┣ 📜dropdown-menu.tsx
+ ┃ ┃ ┣ 📜input.tsx
+ ┃ ┃ ┣ 📜label.tsx
+ ┃ ┃ ┣ 📜pagination.tsx
+ ┃ ┃ ┣ 📜sheet.tsx
+ ┃ ┃ ┣ 📜skeleton.tsx
+ ┃ ┃ ┣ 📜table.tsx
+ ┃ ┃ ┣ 📜toast.tsx
+ ┃ ┃ ┣ 📜toaster.tsx
+ ┃ ┃ ┗ 📜use-toast.ts
+ ┣ 📂fonts
+ ┃ ┣ 📜PretendardVariable.woff2
+ ┃ ┗ 📜YeojuCeramic.ttf
+ ┣ 📂hooks
+ ┃ ┣ 📂cart
+ ┃ ┃ ┗ 📜useUserCartData.ts
+ ┃ ┣ 📂localFood
+ ┃ ┃ ┣ 📜useDeleteProduct.ts
+ ┃ ┃ ┗ 📜useGetProduct.ts
+ ┃ ┣ 📂market
+ ┃ ┣ 📂payment
+ ┃ ┃ ┣ 📜canclePayWithDbUpdate.tsx
+ ┃ ┃ ┣ 📜getProductImage.ts
+ ┃ ┃ ┣ 📜useDeletePayHistory.tsx
+ ┃ ┃ ┗ 📜useGetPaymentHistory.tsx
+ ┃ ┣ 📜useDebounce.ts
+ ┃ ┣ 📜useDeviceSize.ts
+ ┃ ┗ 📜useUser.ts
+ ┣ 📂lib
+ ┃ ┣ 📜banners.ts
+ ┃ ┗ 📜utils.ts
+ ┣ 📂service
+ ┃ ┣ 📜auth.service.ts
+ ┃ ┗ 📜service.ts
+ ┣ 📂types
+ ┃ ┣ 📜Market.ts
+ ┃ ┣ 📜payHistory.ts
+ ┃ ┗ 📜supabase.ts
+ ┣ 📂utils
+ ┃ ┣ 📂supabase
+ ┃ ┃ ┣ 📜client.ts
+ ┃ ┃ ┣ 📜middleware.ts
+ ┃ ┃ ┗ 📜server.ts
+ ┃ ┗ 📜validate.ts
+ ┣ 📂zustand
+ ┃ ┗ 📂cart
+ ┃ ┃ ┗ 📜cart.data.ts
+ ┣ 📜constant.ts
+ ┗ 📜middleware.ts
+```
+
 ◻ Copyright ©2024 A05 5JOSAMA team all rights reserved.
